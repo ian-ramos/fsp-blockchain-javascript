@@ -41,7 +41,7 @@ class Block {
         console.log('invalid previoushash');
         return false;
     } else if (Block.checkHash(newBlock) !== newBlock.hash) {
-        console.log('invalid hash: ' + Block.checkHash(newBlock) + ' ' + newBlock.hash);
+        console.log('invalid hash');
         return false;
     }
     return true;
